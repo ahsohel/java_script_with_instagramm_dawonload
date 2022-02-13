@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+it is for test
+<form action="{% url 'going_for_insta' %}" method="POST">{%csrf_token%}
+type the link: <input name="link_get">
+<button type="submit">dawonload</button>
+</form>
+
+hello
+
+<div id="fcon">
+
+
+
+
+<div class="h1">h1 tag rrrrrrrrrrrrrrrrr</div>
+<div class="h1" id="h1_2">h1 tag with id</div>
+
+<div class="p">p2 tag</div>
+<div class="p" id="p_2">p2 tag with id</div>
+
+<div class="div">div tag</div>
+<div class="div" id="div_2">div tag with id</div>
+
+<span id="show_javas">span is working</span>
+<input id="show_input">
+<button type="button" id="button_id">click</button>
+</div>
+<script>
+k=8;
+
+document.write(k);
+
+document.write("document_write");
+<!--h1_2.innerHTML-->
+
+ t = document.getElementById('h1_2');
+ console.log(t);
+
+ y = document.getElementById('h1_2');
+
+ console.log(y.innerHTML);
+
+ document.write("i am writting innerHTML");
+ tt = y.innerHTML
+
+ document.write(tt);
+
+document.getElementById('show_javas').innerHTML=k;
+document.getElementById('show_input').value=k;
+
+document. write("<br>");
+document. write("<br>");
+ee = document.getElementsByTagName('span')
+
+ console.log(ee);
+ document.write(ee);
+
+document. write("<br>");
+document. write("<br>");
+rr = document.getElementsByTagName('div')[5];
+ document.write(rr);
+ console.log(rr);
+ document.write(rr.innerHTML);
+
+document. write("<br>");
+ var g=33333
+ var rt=33333
+ document.write(g+rt);
+
+ document. write("<br>");
+
+
+<!--function-->
+ function r(a,b){
+ return a+b;
+ }
+ document. write("<br>");
+ c1= r(2,3)
+ document. write(c1);
+
+
+<!-- array-->
+ document. write("<br>");
+f=[2,"elo",4]
+ document. write(f);
+  document. write("<br>");
+ document. write(f[1]);
+
+
+
+<!--condition-->
+document. write("<br>");
+f=5;
+if(f<5){
+document. write("f is greater then five");
+}
+
+else if(f<=5){
+document. write("f is equal to five");
+}
+
+else{
+document. write("Less");
+}
+
+<!--lenth of a array or string-->
+asss = [2,3,4,5]
+document. write("<br>");
+document. write(asss.length);
+
+ess = "hello hi"
+document. write("<br>");
+document. write(ess.length);
+
+
+<!--loop-->
+document. write("<br>");
+
+aasss = [2,3,4,5]
+for(var i=0; i<aasss.length; i++){
+document. write(i, " ");
+document. write(aasss[i]);
+document. write("<br>");
+}
+
+
+<!--continu or break-->
+
+document. write("<br>");
+
+aasss = [2,3,4,5]
+
+for(var i=0; i<aasss.length; i++){
+ if(i==2){
+ break;
+ }
+document. write(aasss[i]);
+document. write("<br>");
+}
+document. write("<br>");
+
+document. write("<br>");
+for(var i=0; i<aasss.length; i++){
+ if(i==2){
+ continue;
+ }
+document. write(aasss[i]);
+document. write("<br>");
+}
+
+
+<!--sort-->
+p=[3,5,2,5,8,4,4,6]
+document. write(p.sort());
+document. write("<br>");
+
+<!--date time ar jonno ar onak gola system ase necar link a -->
+<!--https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours-->
+var d = new Date();
+document. write("<br>");
+document. write(d);
+
+
+
+<!--click-->
+document.getElementById('button_id').click()
+
+document. write("<br>");
+rrrr=document.getElementsByClassName('h1')
+document. write(rrrr[0].innerHTML);
+document. write("<br>");
+document. write(rrrr[0].innerText);
+
+
+document. write("<br>");
+<!--Events in JavaScript-->
+<!--fcon.addEventListener('click', function(){-->
+
+<!--     console.log("Clicked on Container")-->
+<!-- })-->
+
+<!-- fcon.addEventListener('mouseover', function(){-->
+<!--     console.log("Mouse on Container")-->
+<!-- })-->
+
+<!-- fcon.addEventListener('mouseout', function(){-->
+<!--     console.log("Mouse out of Container");-->
+<!-- })-->
+
+
+<!-- fcon.addEventListener('mouseup', function(){-->
+
+<!--     console.log("Mouse up when clicked on Container");-->
+<!-- })-->
+
+<!-- fcon.addEventListener('mousedown', function(){-->
+<!--     console.log("Mouse down when clicked on Container");-->
+<!-- })-->
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+<input type="radio" id="html" name="fav_language" value="HTML" onclick="HTML(this.value)">
+<label for="html">HTML</label><br>
+<input type="radio" id="css" name="fav_language" value="CSS" onclick="HTML(this.value)">
+<label for="css">CSS</label><br>
+<input type="radio" id="javascript" name="fav_language" value="JavaScript" onclick="HTML(this.value)">
+<label for="javascript">JavaScript</label>
+<script>
+function HTML(this_value){
+console.log(this_value)
+ console.log('HTML')
+ }
+
+</script>
+
+
+</body>
+</html>
